@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Nuevo Cliente</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Registro de Clientes</h1>
+  </header>
+  <div class="container">
+    <form id="formulario-registro">
+      <div class="form-group">
+          <label>RUT (con puntos y guión):</label>
+          <input type="text" name="rut" placeholder="Ej: 12.345.678-9" required>
+      </div>
+      <div class="form-group">
+          <label>Nombre Completo:</label>
+          <input type="text" name="nombre" placeholder="Nombre completo del cliente" required>
+      </div>
+      <div class="form-group">
+          <label>Edad:</label>
+          <input type="number" name="edad" placeholder="Edad en años" required>
+      </div>
+      <button type="submit">Guardar Registro</button>
+    </form>
+    <pre id="resultado-operacion"></pre>
+    <a href="index.html" class="back-link">Volver al panel principal</a>
+  </div>
+
+  <script src="js/crear.js"></script>
+</body>
+</html>

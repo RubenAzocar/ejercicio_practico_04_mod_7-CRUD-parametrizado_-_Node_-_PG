@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listado General de Clientes</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Listado de Clientes</h1>
+  </header>
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <h2 style="margin: 0;">Registros en sistema</h2>
+        <button id="refrescar" style="width: auto; padding: 0.5rem 1rem;">Refrescar lista</button>
+    </div>
+
+    <div class="table-container">
+        <table id="tabla-clientes">
+          <thead>
+            <tr>
+                <th>RUT / Identificador</th>
+                <th>Nombre Completo</th>
+                <th>Edad (Años)</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td colspan="3" style="text-align: center; color: var(--text-muted);">Cargando registros...</td></tr>
+          </tbody>
+        </table>
+    </div>
+
+    <a href="index.html" class="back-link">Volver al panel principal</a>
+  </div>
+
+  <script src="js/listar.js"></script>
+</body>
+</html>

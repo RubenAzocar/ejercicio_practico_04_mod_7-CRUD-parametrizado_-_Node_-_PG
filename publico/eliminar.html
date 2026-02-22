@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Baja de Clientes</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Eliminación de Clientes</h1>
+  </header>
+  <div class="container">
+    <div style="background-color: #fff5f5; border-left: 4px solid var(--danger); padding: 1rem; margin-bottom: 2rem; border-radius: 8px;">
+        <p style="margin: 0; color: var(--danger); font-weight: 600;">Precaución: Esta acción no se puede deshacer.</p>
+    </div>
+    <form id="formulario-eliminacion">
+      <div class="form-group">
+          <label>Eliminar por RUT:</label>
+          <input type="text" name="rut" placeholder="Ej: 11.111.111-1">
+      </div>
+      <div class="form-group">
+          <label>O eliminar por Nombre:</label>
+          <input type="text" name="nombre" placeholder="Nombre completo">
+      </div>
+      <div class="form-group">
+          <label>O eliminar por Edad:</label>
+          <input type="number" name="edad" placeholder="Edad exacta">
+      </div>
+      <button type="submit" style="background-color: var(--danger);">Eliminar Registro Definitivamente</button>
+    </form>
+    <pre id="resultado-eliminacion"></pre>
+    <a href="index.html" class="back-link">Volver al panel principal</a>
+  </div>
+
+  <script src="js/eliminar.js"></script>
+</body>
+</html>

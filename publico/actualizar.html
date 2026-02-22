@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Modificación de Cliente</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Actualización de Datos</h1>
+  </header>
+  <div class="container">
+    <form id="formulario-actualizacion">
+      <div class="form-group">
+          <label>RUT del Cliente a modificar:</label>
+          <input type="text" name="rut" placeholder="Ej: 11.111.111-1" required>
+      </div>
+      <div class="form-group">
+          <label>Nuevo Nombre:</label>
+          <input type="text" name="nombre" placeholder="Ingrese nuevo nombre completo" required>
+      </div>
+      <button type="submit">Ejecutar Actualización</button>
+    </form>
+    <pre id="resultado-actualizacion"></pre>
+    <a href="index.html" class="back-link">Volver al panel principal</a>
+  </div>
+
+  <script src="js/actualizar.js"></script>
+</body>
+</html>
